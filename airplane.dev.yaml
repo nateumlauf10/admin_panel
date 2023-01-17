@@ -1,0 +1,11 @@
+resources:
+    - database: railway
+      host: containers-us-west-16.railway.app
+      kind: postgres
+      name: prod_db
+      password: VIAuj6Aox37NC9GG4ifW
+      port: "7299"
+      slug: prod_db
+      ssl: require
+      username: postgres
+configVars: {}

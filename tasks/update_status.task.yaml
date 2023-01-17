@@ -1,0 +1,21 @@
+# Full reference: https://docs.airplane.dev/tasks/task-definition
+
+slug: prod_db_status
+name: Update comment status
+description: "SQL task that updates the status of a comment."
+parameters:
+  - slug: id
+    name: ID
+    type: integer
+    required: true
+  - slug: status
+    name: New status
+    type: shorttext
+    required: true
+sql:
+  # Replace with your own DB name
+  resource: "prod_db"
+  entrypoint: update_status.sql
+  queryArgs:
+    id: "{{params.id}}"
+    status: "{{params.status}}"
