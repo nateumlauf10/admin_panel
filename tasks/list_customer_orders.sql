@@ -8,5 +8,3 @@ SELECT
   status
 FROM
   comments
-
-

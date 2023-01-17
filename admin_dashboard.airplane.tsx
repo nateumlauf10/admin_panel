@@ -17,6 +17,8 @@ const Dashboard = () => {
   const customersTable = useComponentState("customers");
   const selectedCustomer = customersTable.selectedRow;
 
+// adding for test
+
   return (
     <Stack>
       <Title>Comment Dashboard</Title>
